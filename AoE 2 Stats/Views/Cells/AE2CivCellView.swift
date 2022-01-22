@@ -41,17 +41,7 @@ struct AE2CivCellView: View {
     }
 }
 
-struct CivIconFormatted: View {
-    
-    let civ: Civilisation
-    
-    var body: some View {
-        Image("CivIcon-\(civ.name)")
-            .resizable()
-            .aspectRatio(contentMode: .fit)
-            .frame(width: 80, height: 80)
-    }
-}
+
 
 struct AE2CivCellView_Previews: PreviewProvider {
     static var previews: some View {

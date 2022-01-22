@@ -16,6 +16,16 @@ struct AE2CivListView: View {
             NavigationView {
                 List(vM.civilisations) { civ in
                     AE2CivCellView(civ: civ)
+                        .onTapGesture {
+                            vM.selectedCiv = civ
+                            NavigationLink {
+                                AE2CivView(civ: vM.selectedCiv)
+                            } label: {
+                                Text(">")
+                            }
+
+                            //(destination: AE2CivView(civ: vM.selectedCiv))
+                        }
                 }
                 .navigationTitle("Civilisations")
             }.onAppear {
