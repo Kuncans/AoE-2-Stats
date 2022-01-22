@@ -21,6 +21,7 @@
 		52EB3790279C337E000955AA /* AE2CivCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB378F279C337E000955AA /* AE2CivCellView.swift */; };
 		52EB3792279C3E48000955AA /* PlaceholderCivView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB3791279C3E47000955AA /* PlaceholderCivView.swift */; };
 		52EB3794279C3FF5000955AA /* AE2CivListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB3793279C3FF5000955AA /* AE2CivListViewModel.swift */; };
+		52EB3798279C6D06000955AA /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB3797279C6D06000955AA /* Color+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		52EB378F279C337E000955AA /* AE2CivCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AE2CivCellView.swift; sourceTree = "<group>"; };
 		52EB3791279C3E47000955AA /* PlaceholderCivView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderCivView.swift; sourceTree = "<group>"; };
 		52EB3793279C3FF5000955AA /* AE2CivListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AE2CivListViewModel.swift; sourceTree = "<group>"; };
+		52EB3797279C6D06000955AA /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 		52EB3775279C28FF000955AA /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				52EB3797279C6D06000955AA /* Color+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				52EB3782279C2A6C000955AA /* NetworkError.swift in Sources */,
 				52EB3786279C2ACD000955AA /* UniqueUnit.swift in Sources */,
 				52EB3784279C2A99000955AA /* Civilisation.swift in Sources */,
+				52EB3798279C6D06000955AA /* Color+Ext.swift in Sources */,
 				52EB378E279C2D82000955AA /* AE2CivListView.swift in Sources */,
 				52EB378A279C2B96000955AA /* NetworkManager.swift in Sources */,
 				52EB3794279C3FF5000955AA /* AE2CivListViewModel.swift in Sources */,

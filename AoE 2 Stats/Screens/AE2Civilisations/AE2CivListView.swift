@@ -21,7 +21,26 @@ struct AE2CivListView: View {
             }.onAppear {
                 vM.getCivilisations()
             }
+            
+            if vM.isLoading {
+                
+                VStack {
+                    
+                    ProgressView()
+                        .progressViewStyle(CircularProgressViewStyle(tint: .theme.accent))
+                        .scaleEffect(3)
+                        .offset(y: -10)
+                    
+                    Text("Fetching Civilisation Information")
+                        .offset(y: 20)
+                        .font(.caption)
+                    
+                }
+                
+            }
+            
         }
+        .navigationViewStyle(.stack)
         .alert(item: $vM.alertItem) { alertItem in
             Alert(title: alertItem.title,
                   message: alertItem.message,

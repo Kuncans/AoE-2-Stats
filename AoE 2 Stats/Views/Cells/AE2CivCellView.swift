@@ -12,7 +12,7 @@ struct AE2CivCellView: View {
     let civ: Civilisation
     
     var body: some View {
-        HStack() {
+        HStack {
             
             CivIconFormatted(civ: civ)
             
@@ -25,10 +25,19 @@ struct AE2CivCellView: View {
                     .font(.caption)
                     .fontWeight(.semibold)
                     .foregroundColor(.secondary)
+                
+                
             }
             .multilineTextAlignment(.center)
             .frame(width: 200)
-        }.padding(.leading)
+            
+            Image(systemName: "chevron.right")
+
+            
+        }
+        .frame(maxWidth: .infinity)
+        .padding(.leading)
+        .padding(.trailing)
     }
 }
 

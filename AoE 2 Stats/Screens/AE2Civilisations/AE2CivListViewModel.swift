@@ -53,7 +53,7 @@ final class AE2CivListViewModel: ObservableObject {
         
         var civClean = civilisations
         
-        civClean = civilisations.sorted(by: { $0.name < $1.name } )
+        civClean = civClean.sorted(by: { $0.name < $1.name } )
         civClean = civClean.filter {$0.id != 22}
         civClean = civClean.filter {$0.id != 26}
         return civClean
