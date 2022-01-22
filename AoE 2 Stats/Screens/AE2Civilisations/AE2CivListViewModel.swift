@@ -22,7 +22,7 @@ final class AE2CivListViewModel: ObservableObject {
                 
                 switch result {
                 case .success(let civilisations):
-                    self.civilisations = civilisations.sorted(by: { $0.name < $1.name } )
+                    self.civilisations = self.cleanCivilisations(civilisations: civilisations)
                     
                 case.failure(let error):
                     switch error {
@@ -48,4 +48,16 @@ final class AE2CivListViewModel: ObservableObject {
             }
         }
     }
+    
+    func cleanCivilisations(civilisations:[Civilisation]) -> [Civilisation] {
+        
+        var civClean = civilisations
+        
+        civClean = civilisations.sorted(by: { $0.name < $1.name } )
+        civClean = civClean.filter {$0.id != 22}
+        civClean = civClean.filter {$0.id != 26}
+        return civClean
+        
+    }
+    
 }

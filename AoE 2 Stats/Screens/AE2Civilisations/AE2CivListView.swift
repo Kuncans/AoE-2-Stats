@@ -20,7 +20,6 @@ struct AE2CivListView: View {
                 .navigationTitle("Civilisations")
             }.onAppear {
                 vM.getCivilisations()
-                print(vM.civilisations)
             }
         }
         .alert(item: $vM.alertItem) { alertItem in
