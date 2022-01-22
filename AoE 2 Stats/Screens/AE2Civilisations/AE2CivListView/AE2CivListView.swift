@@ -15,18 +15,10 @@ struct AE2CivListView: View {
         ZStack {
             NavigationView {
                 List(vM.civilisations) { civ in
-                    AE2CivCellView(civ: civ)
-                        .onTapGesture {
-                            vM.selectedCiv = civ
-                            NavigationLink {
-                                AE2CivView(civ: vM.selectedCiv)
-                            } label: {
-                                Text(">")
-                            }
-
-                            //(destination: AE2CivView(civ: vM.selectedCiv))
-                        }
-                }
+                    NavigationLink(
+                        destination: AE2CivTabView(civ: civ),
+                        label: { AE2CivCellView(civ: civ) })
+                }.listStyle(.plain)
                 .navigationTitle("Civilisations")
             }.onAppear {
                 vM.getCivilisations()

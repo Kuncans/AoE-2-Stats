@@ -31,13 +31,13 @@ struct AE2CivCellView: View {
             .multilineTextAlignment(.center)
             .frame(width: 200)
             
-            Image(systemName: "chevron.right")
+           // Image(systemName: "chevron.right")
 
             
         }
-        .frame(maxWidth: .infinity)
         .padding(.leading)
         .padding(.trailing)
+
     }
 }
 
