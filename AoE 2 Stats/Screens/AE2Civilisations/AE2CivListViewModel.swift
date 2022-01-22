@@ -16,13 +16,13 @@ final class AE2CivListViewModel: ObservableObject {
     
     func getCivilisations() {
         isLoading = true
-        NetworkManager.shared.getCivilisations { [self] result in
+        NetworkManager.shared.getCivilisations { result in
             DispatchQueue.main.async {
-                isLoading = false
+                self.isLoading = false
                 
                 switch result {
                 case .success(let civilisations):
-                    self.civilisations = civilisations
+                    self.civilisations = civilisations.sorted(by: { $0.name < $1.name } )
                     
                 case.failure(let error):
                     switch error {
