@@ -17,6 +17,7 @@
 		52EB3786279C2ACD000955AA /* UniqueUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB3785279C2ACD000955AA /* UniqueUnit.swift */; };
 		52EB3788279C2AF4000955AA /* Cost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB3787279C2AF4000955AA /* Cost.swift */; };
 		52EB378A279C2B96000955AA /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB3789279C2B96000955AA /* NetworkManager.swift */; };
+		52EB378E279C2D82000955AA /* AE2CivListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB378D279C2D82000955AA /* AE2CivListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		52EB3785279C2ACD000955AA /* UniqueUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniqueUnit.swift; sourceTree = "<group>"; };
 		52EB3787279C2AF4000955AA /* Cost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cost.swift; sourceTree = "<group>"; };
 		52EB3789279C2B96000955AA /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		52EB378B279C2C44000955AA /* SteamAPI.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = SteamAPI.md; sourceTree = "<group>"; };
+		52EB378D279C2D82000955AA /* AE2CivListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AE2CivListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,7 @@
 		52EB3771279C2839000955AA /* Match */ = {
 			isa = PBXGroup;
 			children = (
+				52EB378B279C2C44000955AA /* SteamAPI.md */,
 			);
 			path = Match;
 			sourceTree = "<group>";
@@ -156,6 +160,7 @@
 		52EB3779279C2919000955AA /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				52EB378C279C2D66000955AA /* AE2Civilisations */,
 				52EB376E279C281D000955AA /* AE2HomeView.swift */,
 			);
 			path = Screens;
@@ -187,6 +192,14 @@
 			children = (
 			);
 			path = "Empty States";
+			sourceTree = "<group>";
+		};
+		52EB378C279C2D66000955AA /* AE2Civilisations */ = {
+			isa = PBXGroup;
+			children = (
+				52EB378D279C2D82000955AA /* AE2CivListView.swift */,
+			);
+			path = AE2Civilisations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +276,7 @@
 				52EB3782279C2A6C000955AA /* NetworkError.swift in Sources */,
 				52EB3786279C2ACD000955AA /* UniqueUnit.swift in Sources */,
 				52EB3784279C2A99000955AA /* Civilisation.swift in Sources */,
+				52EB378E279C2D82000955AA /* AE2CivListView.swift in Sources */,
 				52EB378A279C2B96000955AA /* NetworkManager.swift in Sources */,
 				52EB376F279C281D000955AA /* AE2HomeView.swift in Sources */,
 				52EB3761279C27FE000955AA /* AoE_2_StatsApp.swift in Sources */,
