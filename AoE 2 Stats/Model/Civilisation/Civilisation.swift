@@ -19,7 +19,7 @@ struct Civilisation: Decodable, Identifiable {
 }
 
 struct CivResponse: Decodable {
-    let civilisations: [Civilisation]
+    let civilizations: [Civilisation]
 }
 
 struct MockData {

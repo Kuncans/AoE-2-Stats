@@ -9,16 +9,24 @@ import SwiftUI
 
 struct AE2CivListView: View {
     
-    var mockCivs = MockData.civilisationsSample
-    
+    @StateObject var vM = AE2CivListViewModel()
+        
     var body: some View {
         ZStack {
             NavigationView {
-                List(mockCivs) { civ in
+                List(vM.civilisations) { civ in
                     AE2CivCellView(civ: civ)
                 }
                 .navigationTitle("Civilisations")
+            }.onAppear {
+                vM.getCivilisations()
+                print(vM.civilisations)
             }
+        }
+        .alert(item: $vM.alertItem) { alertItem in
+            Alert(title: alertItem.title,
+                  message: alertItem.message,
+                  dismissButton: alertItem.dismissButton)
         }
     }
 }

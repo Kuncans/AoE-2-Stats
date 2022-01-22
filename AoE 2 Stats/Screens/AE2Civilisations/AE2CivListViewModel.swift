@@ -15,6 +15,7 @@ final class AE2CivListViewModel: ObservableObject {
     @Published var selectedCiv: Civilisation?
     
     func getCivilisations() {
+        isLoading = true
         NetworkManager.shared.getCivilisations { [self] result in
             DispatchQueue.main.async {
                 isLoading = false
@@ -28,15 +29,20 @@ final class AE2CivListViewModel: ObservableObject {
                         
                     case .invalidData:
                         self.alertItem = AlertContext.invalidData
+                        print("invalid data")
                         
                     case .invalidURL:
                         self.alertItem = AlertContext.invalidURL
+                        print("invalid url")
                         
                     case .invalidResponse:
                         self.alertItem = AlertContext.invalidResponse
+                        print("invalid response")
                         
                     case .unableToComplete:
                         self.alertItem = AlertContext.unableToComplete
+                        print("unable to complete")
+                        
                     }
                 }
             }
