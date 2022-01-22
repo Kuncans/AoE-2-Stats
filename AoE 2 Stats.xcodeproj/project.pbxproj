@@ -25,6 +25,7 @@
 		52EB379C279C772A000955AA /* AE2CivView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB379B279C772A000955AA /* AE2CivView.swift */; };
 		52EB379E279C77A0000955AA /* CivIconFormatted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB379D279C77A0000955AA /* CivIconFormatted.swift */; };
 		52EB37A0279C7DAE000955AA /* AE2CivTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB379F279C7DAE000955AA /* AE2CivTabView.swift */; };
+		52EB37A2279C83A2000955AA /* AE2CivBonusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB37A1279C83A2000955AA /* AE2CivBonusCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		52EB379B279C772A000955AA /* AE2CivView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AE2CivView.swift; sourceTree = "<group>"; };
 		52EB379D279C77A0000955AA /* CivIconFormatted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivIconFormatted.swift; sourceTree = "<group>"; };
 		52EB379F279C7DAE000955AA /* AE2CivTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AE2CivTabView.swift; sourceTree = "<group>"; };
+		52EB37A1279C83A2000955AA /* AE2CivBonusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AE2CivBonusCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				52EB378F279C337E000955AA /* AE2CivCellView.swift */,
+				52EB37A1279C83A2000955AA /* AE2CivBonusCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 			files = (
 				52EB379C279C772A000955AA /* AE2CivView.swift in Sources */,
 				52EB3780279C2A36000955AA /* Alert.swift in Sources */,
+				52EB37A2279C83A2000955AA /* AE2CivBonusCell.swift in Sources */,
 				52EB3782279C2A6C000955AA /* NetworkError.swift in Sources */,
 				52EB3786279C2ACD000955AA /* UniqueUnit.swift in Sources */,
 				52EB3784279C2A99000955AA /* Civilisation.swift in Sources */,

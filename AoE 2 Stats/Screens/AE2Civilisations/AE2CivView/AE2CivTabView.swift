@@ -35,6 +35,7 @@ struct AE2CivTabView: View {
 struct AE2CivTabView_Previews: PreviewProvider {
     static var previews: some View {
         AE2CivTabView(civ: MockData.sampleCiv1)
+            //.preferredColorScheme(.dark)
         }
     }
 }

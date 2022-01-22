@@ -13,44 +13,51 @@ struct AE2CivView: View {
     
     var body: some View {
         
-        VStack (spacing: 8) {
-            
-            Text(civ.name)
-                .font(.title)
-                .fontWeight(.bold)
+        ScrollView(showsIndicators: true) {
+            VStack (spacing: 8) {
                 
-            Image("CivIcon-\(civ.name)")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 140, height: 140)
-                
-            Text(civ.expansion)
-                .font(.caption)
-                .fontWeight(.semibold)
-                .foregroundColor(.secondary)
+                Text(civ.name)
+                    .font(.title)
+                    .fontWeight(.bold)
                     
-            Text("\(civ.army_type) civilisation")
-                .font(.title2)
-                .fontWeight(.semibold)
-                .padding(.top)
-                .frame(maxWidth: 300)
+                Image("CivIcon-\(civ.name)")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 140, height: 140)
+                    
+                Text(civ.expansion)
+                    .font(.caption)
+                    .fontWeight(.semibold)
+                    .foregroundColor(.secondary)
+                        
+                Text("\(civ.army_type) civilisation")
+                    .font(.title2)
+                    .fontWeight(.semibold)
+                    .padding(.top)
+                    .frame(maxWidth: 300)
 
-            
-            Text("Team Bonus:")
-                .font(.title2)
-                .fontWeight(.semibold)
-                .frame(maxWidth: 300)
-                .padding(.top)
-            
-            Text(civ.team_bonus)
-                .font(.caption)
-                .foregroundColor(Color.theme.green)
-
-            Spacer()
+                Text("Team Bonuses:")
+                    .font(.title2)
+                    .fontWeight(.semibold)
+                    .frame(maxWidth: 300)
+                    .padding(.top)
                 
-        }
-        .multilineTextAlignment(.center)
+                Text(civ.team_bonus)
+                    .font(.caption)
+                    .foregroundColor(Color.theme.green)
+                
+                Text("Civ Bonus:")
+                    .font(.title2)
+                    .fontWeight(.semibold)
+                    .frame(maxWidth: 300)
+                    .padding(.top)
+                
+                AE2CivBonusCell(civ: civ)
+                    
+            }
+            .multilineTextAlignment(.center)
         .padding()
+        }
     }
 }
 
