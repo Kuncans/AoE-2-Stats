@@ -8,13 +8,17 @@
 import SwiftUI
 
 struct AE2CivListView: View {
+    
+    var mockCivs = MockData.civilisationsSample
+    
     var body: some View {
-        NavigationView {
-            HStack {
-                List {
-                    
+        ZStack {
+            NavigationView {
+                List(mockCivs) { civ in
+                    AE2CivCellView(civ: civ)
                 }
-            }.navigationTitle("Civilisations")
+                .navigationTitle("Civilisations")
+            }
         }
     }
 }
@@ -22,5 +26,6 @@ struct AE2CivListView: View {
 struct AE2CivListView_Previews: PreviewProvider {
     static var previews: some View {
         AE2CivListView()
+            //.preferredColorScheme(.dark)
     }
 }

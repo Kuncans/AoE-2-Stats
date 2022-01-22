@@ -25,7 +25,7 @@ struct CivResponse: Decodable {
 struct MockData {
     
     static let sampleCiv1 = Civilisation(id: 0001,
-                                        name: "Duncas",
+                                        name: "Aztecs",
                                         expansion: "Age of Kings",
                                         army_type: "Infantry and Villager",
                                         unique_unit: ["https://age-of-empires-2-api.herokuapp.com/api/v1/unit/jaguar_warrior"],
@@ -36,7 +36,7 @@ struct MockData {
                                                              "Town centers are free"])
     
     static let sampleCiv2 = Civilisation(id: 0002,
-                                        name: "Edens",
+                                        name: "Britons",
                                         expansion: "The Conquerors",
                                         army_type: "Siege and more Siege",
                                         unique_unit: ["https://age-of-empires-2-api.herokuapp.com/api/v1/unit/woad_raider"],
@@ -47,7 +47,7 @@ struct MockData {
                                                              "Woad raiders have infinite line of sight"])
     
     static let sampleCiv3 = Civilisation(id: 0003,
-                                        name: "Noobs",
+                                        name: "Indians",
                                         expansion: "Forgotten Empires",
                                         army_type: "Infantry and Cavalry",
                                         unique_unit: ["https://age-of-empires-2-api.herokuapp.com/api/v1/unit/samurai"],
