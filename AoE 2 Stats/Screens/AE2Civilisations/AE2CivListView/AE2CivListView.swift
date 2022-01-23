@@ -16,7 +16,7 @@ struct AE2CivListView: View {
             NavigationView {
                 List(vM.civilisations) { civ in
                     NavigationLink(
-                        destination: AE2CivTabView(civ: civ),
+                        destination: AE2CivView(civ: civ),
                         label: { AE2CivCellView(civ: civ) })
                 }.listStyle(.plain)
                 .navigationTitle("Civilisations")

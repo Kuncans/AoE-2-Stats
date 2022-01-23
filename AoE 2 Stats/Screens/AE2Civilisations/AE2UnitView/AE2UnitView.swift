@@ -17,9 +17,6 @@ struct AE2UnitView: View {
         
         ScrollView(showsIndicators: true) {
             VStack (spacing: 8) {
-                
-                
-                
             }
             .multilineTextAlignment(.center)
             .padding()

@@ -10,7 +10,6 @@
 		52EB3761279C27FE000955AA /* AoE_2_StatsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB3760279C27FE000955AA /* AoE_2_StatsApp.swift */; };
 		52EB3765279C2800000955AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52EB3764279C2800000955AA /* Assets.xcassets */; };
 		52EB3768279C2800000955AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52EB3767279C2800000955AA /* Preview Assets.xcassets */; };
-		52EB376F279C281D000955AA /* AE2HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB376E279C281D000955AA /* AE2HomeView.swift */; };
 		52EB3780279C2A36000955AA /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB377F279C2A36000955AA /* Alert.swift */; };
 		52EB3782279C2A6C000955AA /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB3781279C2A6C000955AA /* NetworkError.swift */; };
 		52EB3784279C2A99000955AA /* Civilisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB3783279C2A99000955AA /* Civilisation.swift */; };
@@ -28,6 +27,9 @@
 		52EB37A2279C83A2000955AA /* AE2CivBonusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB37A1279C83A2000955AA /* AE2CivBonusCell.swift */; };
 		52EB37A6279CED73000955AA /* AE2UnitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB37A5279CED73000955AA /* AE2UnitView.swift */; };
 		52EB37A8279CEE0E000955AA /* AE2UnitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB37A7279CEE0E000955AA /* AE2UnitViewModel.swift */; };
+		52EB37AD279D832C000955AA /* AE2HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB37AC279D832C000955AA /* AE2HomeScreen.swift */; };
+		52EB37B0279D86EC000955AA /* AE2SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB37AF279D86EC000955AA /* AE2SettingsView.swift */; };
+		52EB37B2279D86FC000955AA /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB37B1279D86FC000955AA /* Preferences.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +37,6 @@
 		52EB3760279C27FE000955AA /* AoE_2_StatsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AoE_2_StatsApp.swift; sourceTree = "<group>"; };
 		52EB3764279C2800000955AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52EB3767279C2800000955AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		52EB376E279C281D000955AA /* AE2HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AE2HomeView.swift; sourceTree = "<group>"; };
 		52EB377F279C2A36000955AA /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		52EB3781279C2A6C000955AA /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		52EB3783279C2A99000955AA /* Civilisation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Civilisation.swift; sourceTree = "<group>"; };
@@ -54,6 +55,9 @@
 		52EB37A1279C83A2000955AA /* AE2CivBonusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AE2CivBonusCell.swift; sourceTree = "<group>"; };
 		52EB37A5279CED73000955AA /* AE2UnitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AE2UnitView.swift; sourceTree = "<group>"; };
 		52EB37A7279CEE0E000955AA /* AE2UnitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AE2UnitViewModel.swift; sourceTree = "<group>"; };
+		52EB37AC279D832C000955AA /* AE2HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AE2HomeScreen.swift; sourceTree = "<group>"; };
+		52EB37AF279D86EC000955AA /* AE2SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AE2SettingsView.swift; sourceTree = "<group>"; };
+		52EB37B1279D86FC000955AA /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +92,6 @@
 			children = (
 				52EB3760279C27FE000955AA /* AoE_2_StatsApp.swift */,
 				52EB3764279C2800000955AA /* Assets.xcassets */,
-				52EB376E279C281D000955AA /* AE2HomeView.swift */,
 				52EB3766279C2800000955AA /* Preview Content */,
 				52EB3770279C2831000955AA /* Model */,
 				52EB3773279C28F2000955AA /* Utilities */,
@@ -113,6 +116,7 @@
 				52EB3772279C2840000955AA /* Civilisation */,
 				52EB3771279C2839000955AA /* Match */,
 				52EB3787279C2AF4000955AA /* Cost.swift */,
+				52EB37B1279D86FC000955AA /* Preferences.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -182,6 +186,7 @@
 		52EB3779279C2919000955AA /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				52EB37AE279D862D000955AA /* AE2SettingsView */,
 				52EB378C279C2D66000955AA /* AE2Civilisations */,
 			);
 			path = Screens;
@@ -222,7 +227,9 @@
 		52EB378C279C2D66000955AA /* AE2Civilisations */ = {
 			isa = PBXGroup;
 			children = (
+				52EB37AC279D832C000955AA /* AE2HomeScreen.swift */,
 				52EB379F279C7DAE000955AA /* AE2CivTabView.swift */,
+				52EB37AB279D82D6000955AA /* HomeView */,
 				52EB37A4279CED59000955AA /* AE2UnitView */,
 				52EB379A279C7714000955AA /* AE2CivView */,
 				52EB3799279C76F4000955AA /* AE2CivListView */,
@@ -262,6 +269,21 @@
 				52EB37A7279CEE0E000955AA /* AE2UnitViewModel.swift */,
 			);
 			path = AE2UnitView;
+			sourceTree = "<group>";
+		};
+		52EB37AB279D82D6000955AA /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		52EB37AE279D862D000955AA /* AE2SettingsView */ = {
+			isa = PBXGroup;
+			children = (
+				52EB37AF279D86EC000955AA /* AE2SettingsView.swift */,
+			);
+			path = AE2SettingsView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,14 +360,16 @@
 				52EB3780279C2A36000955AA /* Alert.swift in Sources */,
 				52EB37A2279C83A2000955AA /* AE2CivBonusCell.swift in Sources */,
 				52EB3782279C2A6C000955AA /* NetworkError.swift in Sources */,
+				52EB37B0279D86EC000955AA /* AE2SettingsView.swift in Sources */,
 				52EB3786279C2ACD000955AA /* UniqueUnit.swift in Sources */,
 				52EB3784279C2A99000955AA /* Civilisation.swift in Sources */,
 				52EB3798279C6D06000955AA /* Color+Ext.swift in Sources */,
+				52EB37B2279D86FC000955AA /* Preferences.swift in Sources */,
 				52EB378E279C2D82000955AA /* AE2CivListView.swift in Sources */,
 				52EB378A279C2B96000955AA /* NetworkManager.swift in Sources */,
 				52EB37A8279CEE0E000955AA /* AE2UnitViewModel.swift in Sources */,
 				52EB3794279C3FF5000955AA /* AE2CivListViewModel.swift in Sources */,
-				52EB376F279C281D000955AA /* AE2HomeView.swift in Sources */,
+				52EB37AD279D832C000955AA /* AE2HomeScreen.swift in Sources */,
 				52EB37A0279C7DAE000955AA /* AE2CivTabView.swift in Sources */,
 				52EB3792279C3E48000955AA /* PlaceholderCivView.swift in Sources */,
 				52EB379E279C77A0000955AA /* CivIconFormatted.swift in Sources */,

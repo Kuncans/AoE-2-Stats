@@ -11,7 +11,7 @@ import SwiftUI
 struct AoE_2_StatsApp: App {
     var body: some Scene {
         WindowGroup {
-            AE2CivListView()
+            AE2HomeScreen()
         }
     }
 }
