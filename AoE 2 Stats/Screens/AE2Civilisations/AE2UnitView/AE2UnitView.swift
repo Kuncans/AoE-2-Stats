@@ -17,11 +17,13 @@ struct AE2UnitView: View {
         
         ScrollView(showsIndicators: true) {
             VStack (spacing: 8) {
+                Text(vM.uniqueUnit?.name ?? "No value")
+                Text("\(vM.uniqueUnit?.cost.Gold ?? 0)")
             }
             .multilineTextAlignment(.center)
             .padding()
             .onAppear {
-                vM.getUniqueUnit()
+                vM.getUniqueUnit(unitUrl: civ.unique_unit[0])
              }
         }
     }

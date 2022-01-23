@@ -8,8 +8,8 @@
 import Foundation
 
 struct Cost: Decodable {
-    let Wood: Int
-    //var food: Int   = 0
-    //var stone: Int  = 0
-    let Gold: Int
+    var Wood: Int   = 0
+    //var Food: Int   = 0
+    //var Stone: Int  = 0
+    var Gold: Int   = 0
 }

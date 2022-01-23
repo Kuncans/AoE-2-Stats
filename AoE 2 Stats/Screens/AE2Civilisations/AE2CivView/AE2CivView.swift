@@ -53,7 +53,7 @@ struct AE2CivView: View {
                     .padding(.top)
                 
                 AE2CivBonusCell(civ: civ)
-                    
+                
             }
             .multilineTextAlignment(.center)
         .padding()

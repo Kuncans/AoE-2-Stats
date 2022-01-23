@@ -77,8 +77,8 @@ final class NetworkManager {
             
             do {
                 let decoder = JSONDecoder()
-                let decodedResponse = try decoder.decode(UniqueUnitResponse.self, from: data)
-                completed(.success(decodedResponse.uniqueUnit))
+                let decodedResponse = try decoder.decode(UniqueUnit.self, from: data)
+                completed(.success(decodedResponse))
             } catch {
                 completed(.failure(.invalidData))
             }

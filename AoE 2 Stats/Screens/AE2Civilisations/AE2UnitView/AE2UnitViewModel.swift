@@ -14,10 +14,10 @@ final class AE2UnitViewModel: ObservableObject {
     @Published var isLoading = false
     @Published var selectedCiv: Civilisation?
     
-    func getUniqueUnit() {
+    func getUniqueUnit(unitUrl: String) {
         isLoading = true
     
-        NetworkManager.shared.getUniqueUnit(unitURL: "https://age-of-empires-2-api.herokuapp.com/api/v1/unit/war_wagon") { result in
+        NetworkManager.shared.getUniqueUnit(unitURL: unitUrl) { result in
             DispatchQueue.main.async {
                 self.isLoading = false
                 
