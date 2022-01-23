@@ -18,11 +18,13 @@ struct AE2CivBonusCell: View {
                 HStack {
                     Image(systemName: "plus.circle").foregroundColor(Color.theme.green)
                         .frame(width: 12, height: 12)
-                    Spacer()
+
                     Text(bonus)
                         .multilineTextAlignment(.leading)
                         .frame(width: 300, alignment: .leading)
+                        .padding(.leading)
                 }
+                .frame(maxWidth: .infinity)
                 .padding(.leading)
                 .padding(.trailing)
                 

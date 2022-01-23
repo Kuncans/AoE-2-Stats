@@ -105,6 +105,7 @@
 		52EB3770279C2831000955AA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				52EB37A3279CE769000955AA /* Unit */,
 				52EB3772279C2840000955AA /* Civilisation */,
 				52EB3771279C2839000955AA /* Match */,
 				52EB3787279C2AF4000955AA /* Cost.swift */,
@@ -124,7 +125,6 @@
 			isa = PBXGroup;
 			children = (
 				52EB3783279C2A99000955AA /* Civilisation.swift */,
-				52EB3785279C2ACD000955AA /* UniqueUnit.swift */,
 			);
 			path = Civilisation;
 			sourceTree = "<group>";
@@ -240,6 +240,14 @@
 				52EB379F279C7DAE000955AA /* AE2CivTabView.swift */,
 			);
 			path = AE2CivView;
+			sourceTree = "<group>";
+		};
+		52EB37A3279CE769000955AA /* Unit */ = {
+			isa = PBXGroup;
+			children = (
+				52EB3785279C2ACD000955AA /* UniqueUnit.swift */,
+			);
+			path = Unit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
