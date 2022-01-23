@@ -18,7 +18,7 @@ struct AE2CivTabView: View {
                     Image(systemName: "checkerboard.shield")
                     Text("Civ")
                 }
-            AE2CivView(civ: civ)
+            AE2UnitView(civ: civ)
                 .tabItem {
                     Image(systemName: "person.badge.plus")
                     Text("Unit")

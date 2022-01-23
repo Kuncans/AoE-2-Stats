@@ -26,6 +26,8 @@
 		52EB379E279C77A0000955AA /* CivIconFormatted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB379D279C77A0000955AA /* CivIconFormatted.swift */; };
 		52EB37A0279C7DAE000955AA /* AE2CivTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB379F279C7DAE000955AA /* AE2CivTabView.swift */; };
 		52EB37A2279C83A2000955AA /* AE2CivBonusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB37A1279C83A2000955AA /* AE2CivBonusCell.swift */; };
+		52EB37A6279CED73000955AA /* AE2UnitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB37A5279CED73000955AA /* AE2UnitView.swift */; };
+		52EB37A8279CEE0E000955AA /* AE2UnitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB37A7279CEE0E000955AA /* AE2UnitViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		52EB379D279C77A0000955AA /* CivIconFormatted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivIconFormatted.swift; sourceTree = "<group>"; };
 		52EB379F279C7DAE000955AA /* AE2CivTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AE2CivTabView.swift; sourceTree = "<group>"; };
 		52EB37A1279C83A2000955AA /* AE2CivBonusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AE2CivBonusCell.swift; sourceTree = "<group>"; };
+		52EB37A5279CED73000955AA /* AE2UnitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AE2UnitView.swift; sourceTree = "<group>"; };
+		52EB37A7279CEE0E000955AA /* AE2UnitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AE2UnitViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +222,8 @@
 		52EB378C279C2D66000955AA /* AE2Civilisations */ = {
 			isa = PBXGroup;
 			children = (
+				52EB379F279C7DAE000955AA /* AE2CivTabView.swift */,
+				52EB37A4279CED59000955AA /* AE2UnitView */,
 				52EB379A279C7714000955AA /* AE2CivView */,
 				52EB3799279C76F4000955AA /* AE2CivListView */,
 			);
@@ -237,7 +243,6 @@
 			isa = PBXGroup;
 			children = (
 				52EB379B279C772A000955AA /* AE2CivView.swift */,
-				52EB379F279C7DAE000955AA /* AE2CivTabView.swift */,
 			);
 			path = AE2CivView;
 			sourceTree = "<group>";
@@ -248,6 +253,15 @@
 				52EB3785279C2ACD000955AA /* UniqueUnit.swift */,
 			);
 			path = Unit;
+			sourceTree = "<group>";
+		};
+		52EB37A4279CED59000955AA /* AE2UnitView */ = {
+			isa = PBXGroup;
+			children = (
+				52EB37A5279CED73000955AA /* AE2UnitView.swift */,
+				52EB37A7279CEE0E000955AA /* AE2UnitViewModel.swift */,
+			);
+			path = AE2UnitView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,12 +343,14 @@
 				52EB3798279C6D06000955AA /* Color+Ext.swift in Sources */,
 				52EB378E279C2D82000955AA /* AE2CivListView.swift in Sources */,
 				52EB378A279C2B96000955AA /* NetworkManager.swift in Sources */,
+				52EB37A8279CEE0E000955AA /* AE2UnitViewModel.swift in Sources */,
 				52EB3794279C3FF5000955AA /* AE2CivListViewModel.swift in Sources */,
 				52EB376F279C281D000955AA /* AE2HomeView.swift in Sources */,
 				52EB37A0279C7DAE000955AA /* AE2CivTabView.swift in Sources */,
 				52EB3792279C3E48000955AA /* PlaceholderCivView.swift in Sources */,
 				52EB379E279C77A0000955AA /* CivIconFormatted.swift in Sources */,
 				52EB3761279C27FE000955AA /* AoE_2_StatsApp.swift in Sources */,
+				52EB37A6279CED73000955AA /* AE2UnitView.swift in Sources */,
 				52EB3790279C337E000955AA /* AE2CivCellView.swift in Sources */,
 				52EB3788279C2AF4000955AA /* Cost.swift in Sources */,
 			);
