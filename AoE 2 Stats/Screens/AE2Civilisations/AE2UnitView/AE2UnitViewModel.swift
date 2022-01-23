@@ -14,6 +14,14 @@ final class AE2UnitViewModel: ObservableObject {
     @Published var isLoading = false
     @Published var selectedCiv: Civilisation?
     
+    init(civ: Civilisation) {
+        if !civ.unique_unit.isEmpty {
+            getUniqueUnit(unitUrl: civ.unique_unit)
+
+        }
+        
+    }
+    
     func getUniqueUnit(unitUrl: String) {
         isLoading = true
     

@@ -26,18 +26,7 @@ struct AE2CivListView: View {
             
             if vM.isLoading {
                 
-                VStack {
-                    
-                    ProgressView()
-                        .progressViewStyle(CircularProgressViewStyle(tint: .theme.accent))
-                        .scaleEffect(3)
-                        .offset(y: -10)
-                    
-                    Text("Fetching Civilisation Information")
-                        .offset(y: 20)
-                        .font(.caption)
-                    
-                }
+                LoadingView(title: "Fetching Civilization Information...")
                 
             }
             
@@ -57,3 +46,5 @@ struct AE2CivListView_Previews: PreviewProvider {
             //.preferredColorScheme(.dark)
     }
 }
+
+

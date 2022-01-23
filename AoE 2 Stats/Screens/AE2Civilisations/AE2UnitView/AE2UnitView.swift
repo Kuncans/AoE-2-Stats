@@ -11,19 +11,29 @@ struct AE2UnitView: View {
     
     @StateObject var vM = AE2UnitViewModel()
     
+    @State private var foundUnit: Bool = false
+    
     let civ: Civilisation
     
     var body: some View {
         
         ScrollView(showsIndicators: true) {
+           
             VStack (spacing: 8) {
-                Text(vM.uniqueUnit?.name ?? "No value")
-                Text("\(vM.uniqueUnit?.cost.Gold ?? 0)")
+                
+                if let unit = vM.uniqueUnit {
+                    Text(unit.name)
+                    Text("\(unit.cost.Gold ?? 0)")
+                }
+
             }
             .multilineTextAlignment(.center)
             .padding()
             .onAppear {
-                vM.getUniqueUnit(unitUrl: civ.unique_unit[0])
+                //TODO: Check for nil value
+                if !civ.unique_unit.isEmpty {
+                    vM.getUniqueUnit(unitUrl: civ.unique_unit[0])
+                }
              }
         }
     }

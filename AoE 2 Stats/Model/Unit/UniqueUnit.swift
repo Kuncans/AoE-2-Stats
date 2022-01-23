@@ -12,23 +12,25 @@ import Foundation
 struct UniqueUnit: Decodable, Identifiable {
     let id: Int
     let name: String
-    let description: String
+    let description: String?
     let expansion: String
     let age: String
     let created_in: String
     let cost: Cost
     let build_time: Int
     let reload_time: Double
-    let attack_delay: Double
+    let attack_delay: Double?
     let movement_rate: Double
     let line_of_sight: Int
     let hit_points: Int
-    let range: Int
+    let range: Int?
     let attack: Int
     let armor: String
-    let attack_bonus: [String]
-    let search_radius: Int
-    let accuracy: String
+    let attack_bonus: [String]?
+    let armor_bonus: [String]?
+    let search_radius: Int?
+    let accuracy: String?
+    let blast_radius: Double?
 }
 
 struct UniqueUnitResponse: Decodable {
@@ -54,7 +56,9 @@ struct UnitMockData {
                                         attack: 9,
                                         armor: "0/3",
                                         attack_bonus: ["+5 buildings"],
+                                        armor_bonus: nil,
                                         search_radius: 6,
-                                        accuracy: "100%")
+                                        accuracy: "100%",
+                                        blast_radius: nil)
     
 }
