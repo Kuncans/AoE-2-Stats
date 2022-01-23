@@ -9,53 +9,54 @@ import SwiftUI
 
 final class AE2UnitViewModel: ObservableObject {
  
-    @Published var uniqueUnit: UniqueUnit?
+    @Published var uniqueUnit: [UniqueUnit] = []
     @Published var alertItem: AlertItem?
     @Published var isLoading = false
     @Published var selectedCiv: Civilisation?
     
-    init(civ: Civilisation) {
-        if !civ.unique_unit.isEmpty {
-            getUniqueUnit(unitUrl: civ.unique_unit)
-
-        }
+    
+    func getUniqueUnit(unitUrl: [String]) {
         
-    }
-    
-    func getUniqueUnit(unitUrl: String) {
-        isLoading = true
-    
-        NetworkManager.shared.getUniqueUnit(unitURL: unitUrl) { result in
-            DispatchQueue.main.async {
-                self.isLoading = false
-                
-                switch result {
-                case .success(let uniqueUnit):
-                    self.uniqueUnit = uniqueUnit
+        print(self.uniqueUnit)
+        
+        for uniturl in unitUrl {
+            isLoading = true
+        
+            NetworkManager.shared.getUniqueUnit(unitURL: uniturl) { result in
+                DispatchQueue.main.async {
+                    self.isLoading = false
                     
-                case.failure(let error):
-                    switch error {
+                    switch result {
+                    case .success(let uniqueUnit):
+                        self.uniqueUnit.append(uniqueUnit)
+                        //uniqueUnit ?? UnitMockData.sampleUnit1
                         
-                    case .invalidData:
-                        self.alertItem = AlertContext.invalidData
-                        print("invalid data")
-                        
-                    case .invalidURL:
-                        self.alertItem = AlertContext.invalidURL
-                        print("invalid url")
-                        
-                    case .invalidResponse:
-                        self.alertItem = AlertContext.invalidResponse
-                        print("invalid response")
-                        
-                    case .unableToComplete:
-                        self.alertItem = AlertContext.unableToComplete
-                        print("unable to complete")
-                        
+                    case.failure(let error):
+                        switch error {
+                            
+                        case .invalidData:
+                            self.alertItem = AlertContext.invalidData
+                            print("invalid data")
+                            
+                        case .invalidURL:
+                            self.alertItem = AlertContext.invalidURL
+                            print("invalid url")
+                            
+                        case .invalidResponse:
+                            self.alertItem = AlertContext.invalidResponse
+                            print("invalid response")
+                            
+                        case .unableToComplete:
+                            self.alertItem = AlertContext.unableToComplete
+                            print("unable to complete")
+                            
+                        }
                     }
                 }
             }
         }
     }
-    
+
 }
+    
+

@@ -21,9 +21,8 @@ struct AE2UnitView: View {
            
             VStack (spacing: 8) {
                 
-                if let unit = vM.uniqueUnit {
+                ForEach(vM.uniqueUnit) { unit in
                     Text(unit.name)
-                    Text("\(unit.cost.Gold ?? 0)")
                 }
 
             }
@@ -32,7 +31,7 @@ struct AE2UnitView: View {
             .onAppear {
                 //TODO: Check for nil value
                 if !civ.unique_unit.isEmpty {
-                    vM.getUniqueUnit(unitUrl: civ.unique_unit[0])
+                    vM.getUniqueUnit(unitUrl: civ.unique_unit)
                 }
              }
         }
