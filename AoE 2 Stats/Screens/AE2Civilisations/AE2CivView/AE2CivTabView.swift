@@ -30,6 +30,7 @@ struct AE2CivTabView: View {
                 }
         }
         .accentColor(.theme.accent)
+        
     }
 
 struct AE2CivTabView_Previews: PreviewProvider {

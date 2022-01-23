@@ -9,7 +9,7 @@ import Foundation
 
 //TODO: Fix API Naming
 
-struct UniqueUnit: Decodable {
+struct UniqueUnit: Decodable, Identifiable {
     let id: Int
     let name: String
     let description: String
@@ -29,6 +29,10 @@ struct UniqueUnit: Decodable {
     let attack_bonus: [String]
     let search_radius: Int
     let accuracy: String
+}
+
+struct UniqueUnitResponse: Decodable {
+    let uniqueUnit: UniqueUnit
 }
 
 struct UnitMockData {
