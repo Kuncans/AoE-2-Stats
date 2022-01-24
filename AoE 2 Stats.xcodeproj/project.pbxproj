@@ -31,6 +31,7 @@
 		52EB37B0279D86EC000955AA /* AE2SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB37AF279D86EC000955AA /* AE2SettingsView.swift */; };
 		52EB37B2279D86FC000955AA /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB37B1279D86FC000955AA /* Preferences.swift */; };
 		52EB37D9279E0040000955AA /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB37D8279E0040000955AA /* LoadingView.swift */; };
+		52EB37DC279F423B000955AA /* AE2UnitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB37DB279F423B000955AA /* AE2UnitCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		52EB37AF279D86EC000955AA /* AE2SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AE2SettingsView.swift; sourceTree = "<group>"; };
 		52EB37B1279D86FC000955AA /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 		52EB37D8279E0040000955AA /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		52EB37DB279F423B000955AA /* AE2UnitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AE2UnitCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +202,7 @@
 			children = (
 				52EB378F279C337E000955AA /* AE2CivCellView.swift */,
 				52EB37A1279C83A2000955AA /* AE2CivBonusCell.swift */,
+				52EB37DB279F423B000955AA /* AE2UnitCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 				52EB37B0279D86EC000955AA /* AE2SettingsView.swift in Sources */,
 				52EB3786279C2ACD000955AA /* UniqueUnit.swift in Sources */,
 				52EB3784279C2A99000955AA /* Civilisation.swift in Sources */,
+				52EB37DC279F423B000955AA /* AE2UnitCell.swift in Sources */,
 				52EB3798279C6D06000955AA /* Color+Ext.swift in Sources */,
 				52EB37B2279D86FC000955AA /* Preferences.swift in Sources */,
 				52EB378E279C2D82000955AA /* AE2CivListView.swift in Sources */,

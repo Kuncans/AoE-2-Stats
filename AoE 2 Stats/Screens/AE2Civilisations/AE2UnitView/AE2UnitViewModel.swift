@@ -13,6 +13,7 @@ final class AE2UnitViewModel: ObservableObject {
     @Published var alertItem: AlertItem?
     @Published var isLoading = false
     @Published var selectedCiv: Civilisation?
+    @Published var buildingUnit: String?
     
     
     func getUniqueUnit(unitUrl: [String]) {
@@ -54,6 +55,18 @@ final class AE2UnitViewModel: ObservableObject {
             }
         }
     }
+    
+    func getCreatedBuilding(unit: UniqueUnit) -> String? {
+        let createdIn = unit.created_in
+        
+        if let lastBracket = createdIn.lastIndex(of: "/") {
+            let startIndex = createdIn.index(lastBracket, offsetBy: 1)
+            let building = createdIn.suffix(from: startIndex)
+            return building.capitalized
+        }
+        return nil
+    }
+    
 
 }
     

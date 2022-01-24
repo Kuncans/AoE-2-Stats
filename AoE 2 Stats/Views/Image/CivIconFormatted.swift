@@ -9,10 +9,10 @@ import SwiftUI
 
 struct CivIconFormatted: View {
     
-    let civ: Civilisation
+    let image: String
     
     var body: some View {
-        Image("CivIcon-\(civ.name)")
+        Image(image)
             .resizable()
             .aspectRatio(contentMode: .fit)
             .frame(width: 80, height: 80)
@@ -21,6 +21,6 @@ struct CivIconFormatted: View {
 
 struct CivIconFormatted_Previews: PreviewProvider {
     static var previews: some View {
-        CivIconFormatted(civ: MockData.sampleCiv1)
+        CivIconFormatted(image: "CivIcon-Koreans")
     }
 }

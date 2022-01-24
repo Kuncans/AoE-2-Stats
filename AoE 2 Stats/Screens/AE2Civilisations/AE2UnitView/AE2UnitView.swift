@@ -12,6 +12,7 @@ struct AE2UnitView: View {
     @StateObject var vM = AE2UnitViewModel()
     
     @State private var foundUnit: Bool = false
+    @State private var createdIn = ""
     
     let civ: Civilisation
     
@@ -19,38 +20,29 @@ struct AE2UnitView: View {
         
         ZStack {
             
-                ScrollView(showsIndicators: true) {
-                   
-                    VStack (spacing: 8) {
-                        
-                        ForEach(vM.uniqueUnit) { unit in
-                            Text(unit.name)
-                        }
-
-                    }
-                    .multilineTextAlignment(.center)
-                    .padding()
-                    .onAppear {
-                        //TODO: Check for nil value
-                        if !civ.unique_unit.isEmpty && !foundUnit {
-                            vM.getUniqueUnit(unitUrl: civ.unique_unit)
-                            foundUnit = true
-                        }
-                        
-                       
-                     }
-                    
+            VStack (spacing: 8) {
+                
+                List(vM.uniqueUnit) { unit in
+                    AE2UnitCell(unit: unit, 
+                                building: vM.getCreatedBuilding(unit: unit) ?? "Unknown Building")
+                }.listStyle(PlainListStyle())
+                
+            }
+            .multilineTextAlignment(.center)
+            .padding()
+            .onAppear {
+                if !civ.unique_unit.isEmpty && !foundUnit {
+                    vM.getUniqueUnit(unitUrl: civ.unique_unit)
+                    foundUnit = true
                 }
+            }
             
             if vM.isLoading {
-                
-                LoadingView(title: "Fetching Unique Unit Information...")
-                
+                LoadingView(title: "Fetching Units...")
             }
             
             if civ.unique_unit == [] {
                 Text("Empty State")
-        
             }
         }
     }
