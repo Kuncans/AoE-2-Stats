@@ -22,10 +22,10 @@ struct AE2UnitView: View {
             
             VStack (spacing: 8) {
                 
-                List(vM.uniqueUnit) { unit in
-                    AE2UnitCell(unit: unit, 
+                ForEach(vM.uniqueUnit) { unit in
+                    AE2UnitCell(unit: unit,
                                 building: vM.getCreatedBuilding(unit: unit) ?? "Unknown Building")
-                }.listStyle(PlainListStyle())
+                }
                 
             }
             .multilineTextAlignment(.center)
