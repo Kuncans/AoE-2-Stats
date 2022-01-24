@@ -24,24 +24,31 @@ struct AE2UnitCell: View {
                             .foregroundColor(.white)
                         Text(building)
                             .foregroundColor(Color.white.opacity(0.7))
+                            .padding(.top, 1)
                     }
                     .padding(.top)
+                    
                     Spacer()
                     
                     CivIconFormatted(image: "CivIcon-Koreans")
                                         
                 }
+                
                 Spacer()
+                
+                CostsView(unit: unit)
+                
+                
             }
             .padding(30)
-            .frame(maxWidth: .infinity)
+            .frame(maxWidth: 340)
             .frame(maxHeight: 360)
-            .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+            .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 0.7)))
             .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
             .shadow(color: Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)).opacity(0.3), radius: 10, x: 0, y: 20)
             Spacer()
         }
-        .padding()
+        
         
     }
 }

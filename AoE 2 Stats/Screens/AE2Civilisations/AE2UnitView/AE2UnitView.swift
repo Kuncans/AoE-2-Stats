@@ -20,11 +20,13 @@ struct AE2UnitView: View {
         
         ZStack {
             
-            VStack (spacing: 8) {
+            VStack (spacing: 16) {
                 
-                ForEach(vM.uniqueUnit) { unit in
-                    AE2UnitCell(unit: unit,
-                                building: vM.getCreatedBuilding(unit: unit) ?? "Unknown Building")
+                ScrollView {
+                    ForEach(vM.uniqueUnit) { unit in
+                        AE2UnitCell(unit: unit,
+                                    building: vM.getCreatedBuilding(unit: unit) ?? "Unknown Building")
+                    }
                 }
                 
             }
