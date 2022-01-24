@@ -17,25 +17,41 @@ struct AE2UnitView: View {
     
     var body: some View {
         
-        ScrollView(showsIndicators: true) {
-           
-            VStack (spacing: 8) {
-                
-                ForEach(vM.uniqueUnit) { unit in
-                    Text(unit.name)
-                }
-
-            }
-            .multilineTextAlignment(.center)
-            .padding()
-            .onAppear {
-                //TODO: Check for nil value
-                if !civ.unique_unit.isEmpty && !foundUnit {
-                    vM.getUniqueUnit(unitUrl: civ.unique_unit)
-                    foundUnit = true
-                }
-             }
+        ZStack {
             
+                ScrollView(showsIndicators: true) {
+                   
+                    VStack (spacing: 8) {
+                        
+                        ForEach(vM.uniqueUnit) { unit in
+                            Text(unit.name)
+                        }
+
+                    }
+                    .multilineTextAlignment(.center)
+                    .padding()
+                    .onAppear {
+                        //TODO: Check for nil value
+                        if !civ.unique_unit.isEmpty && !foundUnit {
+                            vM.getUniqueUnit(unitUrl: civ.unique_unit)
+                            foundUnit = true
+                        }
+                        
+                       
+                     }
+                    
+                }
+            
+            if vM.isLoading {
+                
+                LoadingView(title: "Fetching Unique Unit Information...")
+                
+            }
+            
+            if civ.unique_unit == [] {
+                Text("Empty State")
+        
+            }
         }
     }
 }

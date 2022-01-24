@@ -17,14 +17,14 @@ final class AE2UnitViewModel: ObservableObject {
     
     func getUniqueUnit(unitUrl: [String]) {
         
-        print(self.uniqueUnit)
         
         for uniturl in unitUrl {
+            
             isLoading = true
-        
             NetworkManager.shared.getUniqueUnit(unitURL: uniturl) { result in
                 DispatchQueue.main.async {
-                    self.isLoading = false
+                    
+                    //if uniturl == unitUrl.last { self.isLoading = false }
                     
                     switch result {
                     case .success(let uniqueUnit):
@@ -36,22 +36,20 @@ final class AE2UnitViewModel: ObservableObject {
                             
                         case .invalidData:
                             self.alertItem = AlertContext.invalidData
-                            print("invalid data")
                             
                         case .invalidURL:
                             self.alertItem = AlertContext.invalidURL
-                            print("invalid url")
                             
                         case .invalidResponse:
                             self.alertItem = AlertContext.invalidResponse
-                            print("invalid response")
                             
                         case .unableToComplete:
                             self.alertItem = AlertContext.unableToComplete
-                            print("unable to complete")
                             
                         }
                     }
+                    
+                    if uniturl == unitUrl.last { self.isLoading = false }
                 }
             }
         }
