@@ -30,10 +30,12 @@ struct AE2UnitView: View {
             .padding()
             .onAppear {
                 //TODO: Check for nil value
-                if !civ.unique_unit.isEmpty {
+                if !civ.unique_unit.isEmpty && !foundUnit {
                     vM.getUniqueUnit(unitUrl: civ.unique_unit)
+                    foundUnit = true
                 }
              }
+            
         }
     }
 }
