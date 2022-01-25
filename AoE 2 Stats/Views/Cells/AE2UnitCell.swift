@@ -32,7 +32,10 @@ struct AE2UnitCell: View {
                     
                     Spacer()
                     
-                    CivIconFormatted(image: "CivIcon-Koreans")
+                    CivIconFormatted(image: "\(unit.name)")
+                        .border(.white, width: 2)
+                        .cornerRadius(4)
+                        
                     
                 }.padding(.top)
                 
@@ -69,7 +72,7 @@ struct AE2UnitCell: View {
                 
             }
             .padding(20)
-            .frame(maxWidth: screen.width - 40)
+            .frame(maxWidth: screen.width - 20)
             .frame(maxHeight: 470)
             .background(Color.theme.accent.opacity(0.6))
             .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))

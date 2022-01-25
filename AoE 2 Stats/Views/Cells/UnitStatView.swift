@@ -14,35 +14,43 @@ struct UnitStatView: View {
     let statValue: String
     
     var body: some View {
-        HStack {
-         
-            Image(statImage)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 32, height:  32)
-                .padding(.leading)
+        HStack  {
             
             Text(statTitle)
                 .font(.body)
                 .fontWeight(.semibold)
                 .foregroundColor(.white)
-          
+                .multilineTextAlignment(.leading)
+
+            
             Spacer()
             
+            Image(statImage)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 32, height:  32)
+                .padding(.horizontal)
+            
+            
             Text(statValue)
-                .font(.title2)
+                .font(.body)
                 .bold()
                 .foregroundColor(.white)
                 .padding(.trailing)
+                .frame(width: 70)
+            
+            
+           
         }
         .frame(maxWidth: .infinity)
-        //.background(.gray)
         .padding(.horizontal)
+        
     }
 }
 
 struct UnitStatView_Previews: PreviewProvider {
     static var previews: some View {
         UnitStatView(statImage: "wood", statTitle: "Attack", statValue: "10")
+            .preferredColorScheme(.dark)
     }
 }
