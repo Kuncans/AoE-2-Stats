@@ -17,20 +17,13 @@ struct AE2TechView: View {
     let civ: Civilisation
     
     var body: some View {
-        
-        ScrollView {
+        ScrollView{
             ZStack {
-                
                 VStack (spacing: 32) {
-                    
-                    
-                        ForEach(vM.uniqueTech) { tech in
-                           //AE2UnitCell(unit: tech,
-                                       // building: vM.getCreatedBuilding(unit: unit) ?? "Unknown Building")
-                            Text(tech.name)
-                        }
-                    
-                    
+                    ForEach(vM.uniqueTech) { tech in
+                        AE2TechCell(tech: tech,
+                                    building: vM.getDevelopedBuilding(tech: tech) ?? "Unknown")
+                    }
                 }
                 .multilineTextAlignment(.center)
                 .padding()
@@ -50,6 +43,7 @@ struct AE2TechView: View {
                 }
             }
         }
+        .padding(.top, 1)
     }
 }
 

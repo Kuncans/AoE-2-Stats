@@ -108,6 +108,17 @@ final class AE2UnitViewModel: ObservableObject {
         return nil
     }
     
+    func getDevelopedBuilding(tech: UniqueTech) -> String? {
+        let developsIn = tech.develops_in
+        
+        if let lastBracket = developsIn.lastIndex(of: "/") {
+            let startIndex = developsIn.index(lastBracket, offsetBy: 1)
+            let building = developsIn.suffix(from: startIndex)
+            return building.capitalized
+        }
+        return nil
+    }
+    
 
 }
     

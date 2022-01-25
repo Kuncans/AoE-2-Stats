@@ -36,6 +36,7 @@
 		52EB37E027A043B4000955AA /* UnitStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB37DF27A043B3000955AA /* UnitStatView.swift */; };
 		52EB37E327A079B1000955AA /* UniqueTech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB37E227A079B1000955AA /* UniqueTech.swift */; };
 		52EB37E627A07CA4000955AA /* AE2TechView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB37E527A07CA4000955AA /* AE2TechView.swift */; };
+		52EB37E827A07E60000955AA /* AE2TechCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB37E727A07E60000955AA /* AE2TechCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		52EB37DF27A043B3000955AA /* UnitStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitStatView.swift; sourceTree = "<group>"; };
 		52EB37E227A079B1000955AA /* UniqueTech.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniqueTech.swift; sourceTree = "<group>"; };
 		52EB37E527A07CA4000955AA /* AE2TechView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AE2TechView.swift; sourceTree = "<group>"; };
+		52EB37E727A07E60000955AA /* AE2TechCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AE2TechCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +215,7 @@
 				52EB378F279C337E000955AA /* AE2CivCellView.swift */,
 				52EB37A1279C83A2000955AA /* AE2CivBonusCell.swift */,
 				52EB37DB279F423B000955AA /* AE2UnitCell.swift */,
+				52EB37E727A07E60000955AA /* AE2TechCell.swift */,
 				52EB37DF27A043B3000955AA /* UnitStatView.swift */,
 			);
 			path = Cells;
@@ -402,6 +405,7 @@
 				52EB37DC279F423B000955AA /* AE2UnitCell.swift in Sources */,
 				52EB37DE279F5D5A000955AA /* CostsView.swift in Sources */,
 				52EB3798279C6D06000955AA /* Color+Ext.swift in Sources */,
+				52EB37E827A07E60000955AA /* AE2TechCell.swift in Sources */,
 				52EB37B2279D86FC000955AA /* Preferences.swift in Sources */,
 				52EB378E279C2D82000955AA /* AE2CivListView.swift in Sources */,
 				52EB378A279C2B96000955AA /* NetworkManager.swift in Sources */,

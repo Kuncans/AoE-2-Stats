@@ -9,14 +9,14 @@ import SwiftUI
 
 struct CostsView: View {
     
-    let unit: UniqueUnit
+    let cost: Cost
     
     var body: some View {
         HStack (spacing: 36) {
-            ResourceView(resource: "wood", resourceAmount: unit.cost.Wood ?? 0)
-            ResourceView(resource: "food", resourceAmount: unit.cost.Food ?? 0)
-            ResourceView(resource: "gold", resourceAmount: unit.cost.Gold ?? 0)
-            ResourceView(resource: "stone", resourceAmount: unit.cost.Stone ?? 0)
+            ResourceView(resource: "wood", resourceAmount: cost.Wood ?? 0)
+            ResourceView(resource: "food", resourceAmount: cost.Food ?? 0)
+            ResourceView(resource: "gold", resourceAmount: cost.Gold ?? 0)
+            ResourceView(resource: "stone", resourceAmount: cost.Stone ?? 0)
         }
         //.padding()
         .frame(maxWidth: .infinity)
@@ -26,7 +26,7 @@ struct CostsView: View {
 
 struct CostsView_Previews: PreviewProvider {
     static var previews: some View {
-        CostsView(unit: UnitMockData.sampleUnit1)
+        CostsView(cost: UnitMockData.sampleUnit1.cost)
     }
 }
 

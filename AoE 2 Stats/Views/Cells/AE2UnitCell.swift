@@ -80,7 +80,7 @@ struct AE2UnitCell: View {
                     .foregroundColor(.white)
                     .padding(.top)
                 
-                CostsView(unit: unit)
+                CostsView(cost: unit.cost)
                     .padding(.bottom, 20)
                 
                 

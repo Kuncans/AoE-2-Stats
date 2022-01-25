@@ -24,12 +24,10 @@ struct AE2UnitView: View {
                 VStack (spacing: 32) {
                     
                     
-                        ForEach(vM.uniqueUnit) { unit in
-                            AE2UnitCell(unit: unit,
-                                        building: vM.getCreatedBuilding(unit: unit) ?? "Unknown Building")
-                        }
-                    
-                    
+                    ForEach(vM.uniqueUnit) { unit in
+                        AE2UnitCell(unit: unit,
+                                    building: vM.getCreatedBuilding(unit: unit) ?? "Unknown Building")
+                    }     
                 }
                 .multilineTextAlignment(.center)
                 .padding()
@@ -48,7 +46,7 @@ struct AE2UnitView: View {
                     Text("Empty State")
                 }
             }
-        }
+        }.padding(.top, 1)
     }
 }
 
