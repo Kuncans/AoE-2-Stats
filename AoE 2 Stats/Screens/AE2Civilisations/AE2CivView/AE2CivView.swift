@@ -16,9 +16,9 @@ struct AE2CivView: View {
         ScrollView(showsIndicators: true) {
             VStack (spacing: 8) {
                 
-                Text(civ.name)
-                    .font(.title)
-                    .fontWeight(.bold)
+//                Text(civ.name)
+//                    .font(.title)
+//                    .fontWeight(.bold)
                     
                 Image("CivIcon-\(civ.name)")
                     .resizable()
@@ -56,7 +56,8 @@ struct AE2CivView: View {
                 
             }
             .multilineTextAlignment(.center)
-        .padding()
+            .padding()
+            .navigationTitle("\(civ.name)")
         }
     }
 }

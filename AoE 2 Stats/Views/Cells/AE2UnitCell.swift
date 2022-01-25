@@ -91,8 +91,10 @@ struct AE2UnitCell: View {
             .background(Color.theme.accent.opacity(0.6))
             .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
             .shadow(color: Color.theme.accent.opacity(0.25), radius: 10, x: 0, y: 20)
+
         }
-        .padding(.bottom, 18)
+       
+        .padding(.bottom, 12)
         
         
     }
