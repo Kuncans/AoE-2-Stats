@@ -24,9 +24,18 @@ struct AE2UnitCell: View {
                         Text(unit.name)
                             .font(.system(size: 24, weight: .bold))
                             .foregroundColor(.white)
-                        Text(building)
-                            .foregroundColor(Color.white.opacity(0.7))
-                            .padding(.top, 1)
+                        
+                        HStack{
+                            Text(building)
+                                .foregroundColor(Color.white.opacity(0.7))
+                                .padding(.top, 1)
+                            Image(building)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 28, height: 28)
+                                .cornerRadius(8)
+                        }
+                       
                     }.padding(.top)
                     
                     
@@ -39,34 +48,39 @@ struct AE2UnitCell: View {
                     
                 }.padding(.top)
                 
-                UnitStatView(statImage: "wood",
+                UnitStatView(statImage: "damage",
                              statTitle: "Attack",
                              statValue: "\(unit.attack)")
                 
-                UnitStatView(statImage: "wood",
+                UnitStatView(statImage: "hp",
                              statTitle: "Hitpoints",
                              statValue: "\(unit.hit_points)")
                 
-                UnitStatView(statImage: "wood",
+                UnitStatView(statImage: "armor",
                              statTitle: "Armor",
                              statValue: "\(unit.armor)")
                 
-                UnitStatView(statImage: "wood",
+                UnitStatView(statImage: "build",
                              statTitle: "Build Time",
                              statValue: "\(unit.build_time)")
                 
-                UnitStatView(statImage: "wood",
+                UnitStatView(statImage: "speed",
                              statTitle: "Movement Rate",
                              statValue: "\(unit.movement_rate)")
                 
-                UnitStatView(statImage: "wood",
+                UnitStatView(statImage: "los",
                              statTitle: "Line of Sight",
                              statValue: "\(unit.line_of_sight)")
                 
                 Spacer()
                 
-                CostsView(unit: unit)
+                Text("Cost")
+                    .font(.subheadline)
+                    .fontWeight(.semibold)
+                    .foregroundColor(.white)
                     .padding(.top)
+                
+                CostsView(unit: unit)
                     .padding(.bottom, 20)
                 
                 

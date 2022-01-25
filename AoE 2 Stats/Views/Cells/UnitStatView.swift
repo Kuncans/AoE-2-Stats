@@ -15,35 +15,33 @@ struct UnitStatView: View {
     
     var body: some View {
         HStack  {
+           
             
             Text(statTitle)
                 .font(.body)
                 .fontWeight(.semibold)
                 .foregroundColor(.white)
                 .multilineTextAlignment(.leading)
-
+                .padding(.leading)
             
             Spacer()
             
             Image(statImage)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 32, height:  32)
-                .padding(.horizontal)
+                .frame(width: 28, height:  28)
             
             
             Text(statValue)
                 .font(.body)
                 .bold()
                 .foregroundColor(.white)
-                .padding(.trailing)
-                .frame(width: 70)
-            
-            
+                .frame(width: 40)
+                   
            
         }
         .frame(maxWidth: .infinity)
-        .padding(.horizontal)
+        //.padding(.horizontal)
         
     }
 }
