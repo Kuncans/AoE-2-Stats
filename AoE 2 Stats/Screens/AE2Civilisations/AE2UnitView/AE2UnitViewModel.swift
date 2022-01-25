@@ -10,13 +10,14 @@ import SwiftUI
 final class AE2UnitViewModel: ObservableObject {
  
     @Published var uniqueUnit: [UniqueUnit] = []
+    @Published var uniqueTech: [UniqueTech] = []
     @Published var alertItem: AlertItem?
     @Published var isLoading = false
     @Published var selectedCiv: Civilisation?
     @Published var buildingUnit: String?
     
     
-    func getUniqueUnit(unitUrl: [String]) {
+    func getUniqueUnit(unitUrl: [String]) -> Void {
         
         
         for uniturl in unitUrl {
@@ -51,6 +52,46 @@ final class AE2UnitViewModel: ObservableObject {
                     }
                     
                     if uniturl == unitUrl.last { self.isLoading = false }
+                }
+            }
+        }
+    }
+    
+    func getUniqueTech(techUrl: [String]) -> Void {
+        
+        
+        for techurl in techUrl {
+            
+            isLoading = true
+            NetworkManager.shared.getUniqueTech(techURL: techurl) { result in
+                DispatchQueue.main.async {
+                    
+                    //if uniturl == unitUrl.last { self.isLoading = false }
+                    
+                    switch result {
+                    case .success(let uniqueTech):
+                        self.uniqueTech.append(uniqueTech)
+                        //uniqueUnit ?? UnitMockData.sampleUnit1
+                        
+                    case.failure(let error):
+                        switch error {
+                            
+                        case .invalidData:
+                            self.alertItem = AlertContext.invalidData
+                            
+                        case .invalidURL:
+                            self.alertItem = AlertContext.invalidURL
+                            
+                        case .invalidResponse:
+                            self.alertItem = AlertContext.invalidResponse
+                            
+                        case .unableToComplete:
+                            self.alertItem = AlertContext.unableToComplete
+                            
+                        }
+                    }
+                    
+                    if techurl == techUrl.last { self.isLoading = false }
                 }
             }
         }

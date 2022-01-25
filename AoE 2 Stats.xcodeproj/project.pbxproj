@@ -35,6 +35,7 @@
 		52EB37DE279F5D5A000955AA /* CostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB37DD279F5D5A000955AA /* CostsView.swift */; };
 		52EB37E027A043B4000955AA /* UnitStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB37DF27A043B3000955AA /* UnitStatView.swift */; };
 		52EB37E327A079B1000955AA /* UniqueTech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB37E227A079B1000955AA /* UniqueTech.swift */; };
+		52EB37E627A07CA4000955AA /* AE2TechView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB37E527A07CA4000955AA /* AE2TechView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		52EB37DD279F5D5A000955AA /* CostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostsView.swift; sourceTree = "<group>"; };
 		52EB37DF27A043B3000955AA /* UnitStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitStatView.swift; sourceTree = "<group>"; };
 		52EB37E227A079B1000955AA /* UniqueTech.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniqueTech.swift; sourceTree = "<group>"; };
+		52EB37E527A07CA4000955AA /* AE2TechView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AE2TechView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +200,7 @@
 		52EB3779279C2919000955AA /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				52EB379F279C7DAE000955AA /* AE2CivTabView.swift */,
 				52EB37AE279D862D000955AA /* AE2SettingsView */,
 				52EB378C279C2D66000955AA /* AE2Civilisations */,
 			);
@@ -242,8 +245,7 @@
 		52EB378C279C2D66000955AA /* AE2Civilisations */ = {
 			isa = PBXGroup;
 			children = (
-				52EB37AC279D832C000955AA /* AE2HomeScreen.swift */,
-				52EB379F279C7DAE000955AA /* AE2CivTabView.swift */,
+				52EB37E427A07BFD000955AA /* AE2TechView */,
 				52EB37AB279D82D6000955AA /* HomeView */,
 				52EB37A4279CED59000955AA /* AE2UnitView */,
 				52EB379A279C7714000955AA /* AE2CivView */,
@@ -289,6 +291,7 @@
 		52EB37AB279D82D6000955AA /* HomeView */ = {
 			isa = PBXGroup;
 			children = (
+				52EB37AC279D832C000955AA /* AE2HomeScreen.swift */,
 			);
 			path = HomeView;
 			sourceTree = "<group>";
@@ -307,6 +310,14 @@
 				52EB37E227A079B1000955AA /* UniqueTech.swift */,
 			);
 			path = Technology;
+			sourceTree = "<group>";
+		};
+		52EB37E427A07BFD000955AA /* AE2TechView */ = {
+			isa = PBXGroup;
+			children = (
+				52EB37E527A07CA4000955AA /* AE2TechView.swift */,
+			);
+			path = AE2TechView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -395,6 +406,7 @@
 				52EB378E279C2D82000955AA /* AE2CivListView.swift in Sources */,
 				52EB378A279C2B96000955AA /* NetworkManager.swift in Sources */,
 				52EB37A8279CEE0E000955AA /* AE2UnitViewModel.swift in Sources */,
+				52EB37E627A07CA4000955AA /* AE2TechView.swift in Sources */,
 				52EB3794279C3FF5000955AA /* AE2CivListViewModel.swift in Sources */,
 				52EB37AD279D832C000955AA /* AE2HomeScreen.swift in Sources */,
 				52EB37E327A079B1000955AA /* UniqueTech.swift in Sources */,

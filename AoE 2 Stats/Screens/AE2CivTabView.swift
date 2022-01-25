@@ -23,7 +23,7 @@ struct AE2CivTabView: View {
                     Image(systemName: "person.badge.plus")
                     Text("Unit")
                 }
-            AE2CivView(civ: civ)
+            AE2TechView(civ: civ)
                 .tabItem {
                     Image(systemName: "bonjour")
                     Text("Tech")
