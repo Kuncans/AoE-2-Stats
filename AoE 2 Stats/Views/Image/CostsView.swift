@@ -40,13 +40,12 @@ struct ResourceView: View {
             Image(resource)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 34, height: 34)
+                .frame(width: 30, height: 30)
             Text("\(resourceAmount)")
                 .bold()
                 .font(.body)
                 .italic()
                 .foregroundColor(.white)
-            
         }
     }
 }

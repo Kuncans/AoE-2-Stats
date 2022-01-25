@@ -18,33 +18,35 @@ struct AE2UnitView: View {
     
     var body: some View {
         
-        ZStack {
-            
-            VStack (spacing: 32) {
+        ScrollView {
+            ZStack {
                 
-                ScrollView {
-                    ForEach(vM.uniqueUnit) { unit in
-                        AE2UnitCell(unit: unit,
-                                    building: vM.getCreatedBuilding(unit: unit) ?? "Unknown Building")
+                VStack (spacing: 32) {
+                    
+                    
+                        ForEach(vM.uniqueUnit) { unit in
+                            AE2UnitCell(unit: unit,
+                                        building: vM.getCreatedBuilding(unit: unit) ?? "Unknown Building")
+                        }
+                    
+                    
+                }
+                .multilineTextAlignment(.center)
+                .padding()
+                .onAppear {
+                    if !civ.unique_unit.isEmpty && !foundUnit {
+                        vM.getUniqueUnit(unitUrl: civ.unique_unit)
+                        foundUnit = true
                     }
                 }
                 
-            }
-            .multilineTextAlignment(.center)
-            .padding()
-            .onAppear {
-                if !civ.unique_unit.isEmpty && !foundUnit {
-                    vM.getUniqueUnit(unitUrl: civ.unique_unit)
-                    foundUnit = true
+                if vM.isLoading {
+                    LoadingView(title: "Fetching Units...")
                 }
-            }
-            
-            if vM.isLoading {
-                LoadingView(title: "Fetching Units...")
-            }
-            
-            if civ.unique_unit == [] {
-                Text("Empty State")
+                
+                if civ.unique_unit == [] {
+                    Text("Empty State")
+                }
             }
         }
     }

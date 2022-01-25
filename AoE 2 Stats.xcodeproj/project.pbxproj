@@ -33,6 +33,7 @@
 		52EB37D9279E0040000955AA /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB37D8279E0040000955AA /* LoadingView.swift */; };
 		52EB37DC279F423B000955AA /* AE2UnitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB37DB279F423B000955AA /* AE2UnitCell.swift */; };
 		52EB37DE279F5D5A000955AA /* CostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB37DD279F5D5A000955AA /* CostsView.swift */; };
+		52EB37E027A043B4000955AA /* UnitStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB37DF27A043B3000955AA /* UnitStatView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		52EB37D8279E0040000955AA /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		52EB37DB279F423B000955AA /* AE2UnitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AE2UnitCell.swift; sourceTree = "<group>"; };
 		52EB37DD279F5D5A000955AA /* CostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostsView.swift; sourceTree = "<group>"; };
+		52EB37DF27A043B3000955AA /* UnitStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitStatView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +207,7 @@
 				52EB378F279C337E000955AA /* AE2CivCellView.swift */,
 				52EB37A1279C83A2000955AA /* AE2CivBonusCell.swift */,
 				52EB37DB279F423B000955AA /* AE2UnitCell.swift */,
+				52EB37DF27A043B3000955AA /* UnitStatView.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 				52EB379C279C772A000955AA /* AE2CivView.swift in Sources */,
 				52EB3780279C2A36000955AA /* Alert.swift in Sources */,
 				52EB37A2279C83A2000955AA /* AE2CivBonusCell.swift in Sources */,
+				52EB37E027A043B4000955AA /* UnitStatView.swift in Sources */,
 				52EB37D9279E0040000955AA /* LoadingView.swift in Sources */,
 				52EB3782279C2A6C000955AA /* NetworkError.swift in Sources */,
 				52EB37B0279D86EC000955AA /* AE2SettingsView.swift in Sources */,
