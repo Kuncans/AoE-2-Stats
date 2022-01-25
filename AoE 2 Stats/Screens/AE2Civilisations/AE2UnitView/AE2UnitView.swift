@@ -20,7 +20,7 @@ struct AE2UnitView: View {
         
         ZStack {
             
-            VStack (spacing: 16) {
+            VStack (spacing: 32) {
                 
                 ScrollView {
                     ForEach(vM.uniqueUnit) { unit in

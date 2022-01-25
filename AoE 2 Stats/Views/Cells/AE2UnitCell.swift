@@ -46,8 +46,10 @@ struct AE2UnitCell: View {
             .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 0.7)))
             .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
             .shadow(color: Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)).opacity(0.3), radius: 10, x: 0, y: 20)
-            Spacer()
+            
+                    
         }
+        .padding(.bottom, 32)
         
         
     }
