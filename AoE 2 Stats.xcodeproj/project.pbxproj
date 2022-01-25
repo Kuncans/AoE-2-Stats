@@ -34,6 +34,7 @@
 		52EB37DC279F423B000955AA /* AE2UnitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB37DB279F423B000955AA /* AE2UnitCell.swift */; };
 		52EB37DE279F5D5A000955AA /* CostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB37DD279F5D5A000955AA /* CostsView.swift */; };
 		52EB37E027A043B4000955AA /* UnitStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB37DF27A043B3000955AA /* UnitStatView.swift */; };
+		52EB37E327A079B1000955AA /* UniqueTech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB37E227A079B1000955AA /* UniqueTech.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		52EB37DB279F423B000955AA /* AE2UnitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AE2UnitCell.swift; sourceTree = "<group>"; };
 		52EB37DD279F5D5A000955AA /* CostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostsView.swift; sourceTree = "<group>"; };
 		52EB37DF27A043B3000955AA /* UnitStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitStatView.swift; sourceTree = "<group>"; };
+		52EB37E227A079B1000955AA /* UniqueTech.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniqueTech.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 		52EB3770279C2831000955AA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				52EB37E127A079A1000955AA /* Technology */,
 				52EB37A3279CE769000955AA /* Unit */,
 				52EB3772279C2840000955AA /* Civilisation */,
 				52EB3771279C2839000955AA /* Match */,
@@ -298,6 +301,14 @@
 			path = AE2SettingsView;
 			sourceTree = "<group>";
 		};
+		52EB37E127A079A1000955AA /* Technology */ = {
+			isa = PBXGroup;
+			children = (
+				52EB37E227A079B1000955AA /* UniqueTech.swift */,
+			);
+			path = Technology;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -386,6 +397,7 @@
 				52EB37A8279CEE0E000955AA /* AE2UnitViewModel.swift in Sources */,
 				52EB3794279C3FF5000955AA /* AE2CivListViewModel.swift in Sources */,
 				52EB37AD279D832C000955AA /* AE2HomeScreen.swift in Sources */,
+				52EB37E327A079B1000955AA /* UniqueTech.swift in Sources */,
 				52EB37A0279C7DAE000955AA /* AE2CivTabView.swift in Sources */,
 				52EB3792279C3E48000955AA /* PlaceholderCivView.swift in Sources */,
 				52EB379E279C77A0000955AA /* CivIconFormatted.swift in Sources */,
