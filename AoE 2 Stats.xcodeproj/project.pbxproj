@@ -181,11 +181,11 @@
 		52EB3778279C2915000955AA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				52EB37D8279E0040000955AA /* LoadingView.swift */,
 				52EB377D279C2929000955AA /* Empty States */,
 				52EB377C279C2925000955AA /* Buttons */,
 				52EB377B279C2922000955AA /* Image */,
 				52EB377A279C291E000955AA /* Cells */,
-				52EB37D8279E0040000955AA /* LoadingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";

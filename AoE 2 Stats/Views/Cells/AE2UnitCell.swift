@@ -14,6 +14,8 @@ struct AE2UnitCell: View {
     
     
     var body: some View {
+        
+        let screen = UIScreen.main.bounds
 
         ZStack(alignment: .top) {
             VStack {
@@ -40,16 +42,18 @@ struct AE2UnitCell: View {
                 
                 
             }
-            .padding(30)
-            .frame(maxWidth: 340)
-            .frame(maxHeight: 360)
-            .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 0.7)))
+            .padding(20)
+            .frame(maxWidth: screen.width - 40)
+            .frame(maxHeight: 400)
+            //.background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 0.7)))
+            .background(Color.theme.accent.opacity(0.7))
             .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
-            .shadow(color: Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)).opacity(0.3), radius: 10, x: 0, y: 20)
+            .shadow(color: Color.theme.accent.opacity(0.3), radius: 10, x: 0, y: 20)
+            //.shadow(color: Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)).opacity(0.3), radius: 10, x: 0, y: 20)
             
                     
         }
-        .padding(.bottom, 32)
+        .padding(.bottom, 18)
         
         
     }

@@ -12,7 +12,7 @@ struct CostsView: View {
     let unit: UniqueUnit
     
     var body: some View {
-        HStack (spacing: 20) {
+        HStack (spacing: 36) {
             ResourceView(resource: "wood", resourceAmount: unit.cost.Wood ?? 0)
             ResourceView(resource: "food", resourceAmount: unit.cost.Food ?? 0)
             ResourceView(resource: "gold", resourceAmount: unit.cost.Gold ?? 0)
@@ -43,7 +43,7 @@ struct ResourceView: View {
                 .frame(width: 34, height: 34)
             Text("\(resourceAmount)")
                 .bold()
-                .font(.title3)
+                .font(.body)
                 .italic()
                 .foregroundColor(.white)
             
